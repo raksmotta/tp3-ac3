@@ -1,0 +1,17 @@
+warning: Skipping impure flag -march=native because NIX_ENFORCE_NO_NATIVE is set
+gemm.c: In function ‘main’:
+gemm.c:150:5: warning: ignoring return value of ‘posix_memalign’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  150 |     posix_memalign((void**)&A, ALIGNMENT, sizeof(float)*N*N);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gemm.c:151:5: warning: ignoring return value of ‘posix_memalign’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  151 |     posix_memalign((void**)&B, ALIGNMENT, sizeof(float)*N*N);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gemm.c:152:5: warning: ignoring return value of ‘posix_memalign’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  152 |     posix_memalign((void**)&BT, ALIGNMENT, sizeof(float)*N*N);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gemm.c:153:5: warning: ignoring return value of ‘posix_memalign’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  153 |     posix_memalign((void**)&C, ALIGNMENT, sizeof(float)*N*N);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gemm.c:154:5: warning: ignoring return value of ‘posix_memalign’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  154 |     posix_memalign((void**)&Cref, ALIGNMENT, sizeof(float)*N*N);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
